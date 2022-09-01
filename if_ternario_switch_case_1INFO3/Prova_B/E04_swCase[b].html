@@ -1,0 +1,33 @@
+<script>
+    //SWITCH CASE SWITCH CASE SWITCH CASE
+
+    //PROBLEMA: Realizar compra na Panificadora
+    //Peça para o usuário informar o que deseja comprar na panificadora e considere a seguinte situação:
+    //Se informou "Pão Francês", o programa deverá apresentar a mensagem "Preço do Kg: R$ 5,00."
+    //Se informou "Bolo-Cuca", o programa deverá apresentar a mensagem "Preço do pedaço: R$ 15,00."
+    //Se informou "Sonho", o programa deverá apresentar a mensagem "Preço da Unidade: R$ 1,50."
+    //Crie também um default que retornará a mensagem "Opção de compra inválida".
+
+    //DICA: Use PF para Pão Francês, BC para Cuca, SO para Sonho.
+
+    const produto = (prompt("Informe o que gostaria de comprar PF-Pão Francês|BC-Bolo-Cuca|SO-Sonho"));
+
+    let resultado;
+
+    switch (produto) {
+        case "PF":
+            resultado = "Preço do Kg: R$ 5,00.";
+            break;
+            case "BC":
+            resultado = "Preço do pedaço: R$ 15,00.";
+            break;
+            case "SO":
+            resultado = "Preço da Unidade: R$ 1,50.";
+            break;
+    
+        default: resultado = "Opção de compra inválida";
+
+            break;
+    }
+  document.write (resultado);
+</script>

@@ -1,0 +1,27 @@
+<script>
+    //USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO
+    
+    //PROBLEMA: Temperatura dos últimos 4 dias
+    //Peça para o usuário informar a temperatura mínima de cada um dos últimos 4 dias. Calcule a média das temperaturas informadas. Após, considere o seguinte cenário:
+    //Se a média da temperatura for inferior a 10 (inclusive), o programa deverá apresentar a mensagem "FRIO INTENSO".
+    //Se a média da temperatura for inferior a 20 (inclusive), o programa deverá apresentar a mensagem "FRIO MODERADO".
+    //Se a média da temperatura for superior a 20, o programa deverá apresentar a mensagem "PARTIU PRAIA".
+
+    //Apresente a mensagem final, de acordo com o cenário descrito acima.
+
+    const dia1 = parseInt (prompt("Digite a temperatura do primeiro dia"));
+    const dia2 = parseInt (prompt("Digite a temperatura do segundo dia"));
+    const dia3 = parseInt (prompt("Digite a temperatura do terceiro dia"));
+    const dia4 = parseInt (prompt("Digite a temperatura do quarto dia"));
+
+    const media = (dia1 + dia2 + dia3 + dia4)/4
+
+    let resultado;
+
+    (media <= 10)? resultado = "FRIO INTENSO"
+    :(media <=20)? resultado = "FRIO MODERADO"
+    :resultado = "PARTIU PRAIA";
+
+    document.write(resultado);
+
+</script>
