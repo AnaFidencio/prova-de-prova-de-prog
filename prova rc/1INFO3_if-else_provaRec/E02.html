@@ -1,0 +1,20 @@
+<script>
+    //PROBLEMA: Parceria Dev
+    //Peça para o usuário informar a nota da primeira prova que o aluno ajudado obteve e também informar a nota que obteve na segunda prova.
+    //Peça também para o usuário informar a nota que o aluno que ajudou (TUTOR) obteve no segundo trimestre.
+    //Se o aluno ajudado conseguiu obter nota maior na segunda prova, o programa deverá adicionar 15% (15/100) da nota da segunda prova na média trimestral do aluno que ajudou (TUTOR). O programa deverá apresentar a mensagem "OBRIGADO, TUTOR" e a nova média trimestral do TUTOR.
+    //Contudo, se o aluno ajudado não conseguiu melhorar a nota na segunda prova, o programa deverá apresentar a mensagem "CONTINUE ENSINANDO".
+
+   const nota1 = Number(prompt("Informe a nota da primeira prova:"));
+   const nota2 = Number(prompt("Informe a nota da seunda prova:"));
+   const tutor = Number(prompt("Informe a nota que o aluno(TUTOR) obteve no segundo trimestre:"))
+
+   const mediaTrimestral = (tutor * 1.15).toFixed(2)
+
+   if(nota2 > nota1){
+    alert(`OBRIGADO, TUTOR. Média do tutor ${mediaTrimestral} Parabéns!!`)
+   } else {
+    alert (`CONTINUE ENSINANDO`)
+   }
+
+</script>

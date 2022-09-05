@@ -1,0 +1,29 @@
+<script>
+    //PROBLEMA: Compra na Feira
+    //Considere que a pessoa foi até a feira e realizou algumas compras, sendo:
+    //Morango: 3 Caixas
+    //Kiwi: 0.9 Kg
+    //Melão: 3 Unidades
+    //Batata: 1.5 Kg
+    //Peça para o usuário informar o preço do Kg, da Unidade ou da Caixa de cada um dos produtos que comprou (citados acima). Peça para o programa perguntar quanto que o usuário possui em dinheiro. Calcule o custo total dos alimentos comprados e também calcule se o usuário possui dinheiro suficiente e apresente em tela, indicando se sobrará ou faltará dinheiro, indicando também quanto de dinheiro sobrou ou quanto de dinheiro faltou para realizar a compra. Apresente também o valor total da compra.
+
+   const precokg = Number (prompt("Informe o preco do KG"))
+   const precoUnidade = Number (prompt("Informe o preço da Unidade ou da Caixa"))
+   const precoCaixa = Number (prompt("Informe o preço da Unidade ou da Caixa"))
+   const dinheiro = Number (prompt("Informe quanto possui em dinheiro:"))
+
+  const morango = precoCaixa * 3
+const kiwi = precokg * 0.9
+const melao = precoUnidade * 3
+const batata = precokg * 1.5
+const total = morango + kiwi + melao + batata
+const sobra = dinheiro - total
+const falta = total - dinheiro
+
+if ( total <= dinheiro){
+    alert (`Possui dinheiro suficiente e sobrará ${sobra} reias. Valor da compra ${total} reais`)
+}else{
+    alert(`Não possui dinheiro o suficiente e faltará ${falta}reias. Valor da compra ${total} reais`)
+}
+
+</script>
